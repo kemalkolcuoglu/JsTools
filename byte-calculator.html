@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
+  <title>Byte Calculator</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12" style="margin-top: 40px;">
+      <label
+        style="color:#d60b0b;font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;"><b>Data:
+        </b></label>
+      <input type="text" id="data" class="data" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="margin-top: 40px;">
+      <select name="from" id="from">
+        <option selected value="Byte">Byte</option>
+        <option value="Kilo">KiloByte</option>
+        <option value="Mega">MegaByte</option>
+        <option value="Giga">GigaByte</option>
+        <option value="Tera">TeraByte</option>
+      </select>
+      <label> to </label>
+      <select name="to" id="to">
+        <option value="Byte">Byte</option>
+        <option selected value="Kilo">KiloByte</option>
+        <option value="Mega">MegaByte</option>
+        <option value="Giga">GigaByte</option>
+        <option value="Tera">TeraByte</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" style="margin-top: 40px;">
+      <p style="font-size: 16px;line-height: 80px;font-weight: 300;font-style: normal;line-height: 44px;"
+        class="center-block">
+        <b style="color:#d60b0b">Value:</b> <br /> <span id="value">0</span>
+      </p>
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <a href="./index.html">Back to List</a>
+  <script type="text/javascript" src="./bytecalculator.js"></script>
+</body>
+
+</html>
